@@ -74,8 +74,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Cliente.cs" />
-    <Compile Include="Contrato.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -137,6 +135,17 @@
     <Resource Include="images\ListaCliente.png" />
     <Resource Include="images\listaContrato.png" />
     <Resource Include="images\listaContrato_azulnegro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClienteCollection\ClienteCollection.csproj">
+      <Project>{667637a0-401d-4d41-b5f9-e5c65b5a3b61}</Project>
+      <Name>ClienteCollection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ContratoCollection\ContratoCollection.csproj">
+      <Project>{1daa539a-d5d4-4a67-9507-c79d83306000}</Project>
+      <Name>ContratoCollection</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
