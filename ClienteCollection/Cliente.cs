@@ -4,10 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnBreak
+namespace ClienteCollection
 {
     class Cliente
     {
+        public string Rut { get; set; }
+        public string Razonsocial { get; set; }
+        public string Nombre { get; set; }
+        public string Email { get; set; }
+        public string Direccion { get; set; }
+        public int Telefono { get; set; }
+        public string ActividadEmpresa { get; set; }
+        public string TipoEmpresa { get; set; }
     }
 
     public enum _tipoEmpresa

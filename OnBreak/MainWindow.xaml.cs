@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ContratoCollection;
+using ClienteCollection;
 
 namespace OnBreak
 {
@@ -32,8 +34,8 @@ namespace OnBreak
 
         private void Bnt_AdminCliente_Click(object sender, RoutedEventArgs e)
         {
-            WPFAdminCliente newAC = new WPFAdminCliente();
-            newAC.Show();
+            WPFAdminCliente AdminCliente = new WPFAdminCliente();
+            AdminCliente.Show();
         }
     }
 }
