@@ -22,6 +22,9 @@ namespace OnBreak
     /// </summary>
     public partial class MainWindow : Window
     {
+        
+        List<Contrato> ListaContratos = new List<Contrato>();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -38,4 +41,7 @@ namespace OnBreak
             AdminCliente.Show();
         }
     }
+
+    
+
 }
