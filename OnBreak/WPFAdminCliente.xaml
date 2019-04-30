@@ -7,6 +7,26 @@
         mc:Ignorable="d"
         Title="On Break: Administracion de Cliente" Height="450" Width="800">
     <Grid>
-        
+        <Image HorizontalAlignment="Left" Height="165" Margin="-19,286,0,-32" VerticalAlignment="Top" Width="183" Source="images/adminCLiente.png" RenderOptions.BitmapScalingMode="HighQuality" Opacity="0.3"/>
+        <Label Content="RUT:" HorizontalAlignment="Left" Margin="114,37,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRut" HorizontalAlignment="Left" Height="23" Margin="153,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196"/>
+        <Label Content="Razon Social:" HorizontalAlignment="Left" Margin="69,85,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRazonSocia" HorizontalAlignment="Left" Height="23" Margin="153,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" BorderBrush="#FF666666" Background="{x:Null}"/>
+        <Label Content="Nombre de Contacto:" HorizontalAlignment="Left" Margin="24,117,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNombreContacto" HorizontalAlignment="Left" Height="23" Margin="153,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" BorderBrush="#FF666666" Background="{x:Null}"/>
+        <Label Content="Email de Contacto:" HorizontalAlignment="Left" Margin="39,148,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEmailContacto" HorizontalAlignment="Left" Height="23" Margin="153,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" BorderBrush="#FF666666" Background="{x:Null}"/>
+        <Label Content="Direccion:" HorizontalAlignment="Left" Margin="86,179,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDireccion" HorizontalAlignment="Left" Height="23" Margin="153,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" BorderBrush="#FF666666" Background="{x:Null}"/>
+        <Label Content="Telefono:" HorizontalAlignment="Left" Margin="90,210,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Height="23" Margin="153,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" BorderBrush="#FF666666" Background="{x:Null}"/>
+        <Label Content="Actividad:" HorizontalAlignment="Left" Margin="86,241,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cb_Actividad" HorizontalAlignment="Left" Margin="153,241,0,0" VerticalAlignment="Top" Width="196"/>
+        <Label Content="Tipo de Empresa:" HorizontalAlignment="Left" Margin="47,272,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cb_TipoEmpresa" HorizontalAlignment="Left" Margin="153,272,0,0" VerticalAlignment="Top" Width="196"/>
+        <Button x:Name="btn_Buscar" HorizontalAlignment="Left" Margin="354,36,0,0" VerticalAlignment="Top" Width="90">
+            <Image Source="images/buscar.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
+        </Button>
+
     </Grid>
 </Window>

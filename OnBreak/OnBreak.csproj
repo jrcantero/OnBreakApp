@@ -63,9 +63,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClienteListado.xaml.cs">
+      <DependentUpon>ClienteListado.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WPFAdminCliente.xaml.cs">
       <DependentUpon>WPFAdminCliente.xaml</DependentUpon>
     </Compile>
+    <Page Include="ClienteListado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -146,6 +153,9 @@
       <Name>ContratoCollection</Name>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\buscar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
