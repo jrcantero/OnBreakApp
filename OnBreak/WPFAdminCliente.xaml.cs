@@ -91,6 +91,7 @@ namespace OnBreak
         {
 
             DatosObligatorios();
+
             if (contador==0)
             {
                 try
@@ -115,12 +116,7 @@ namespace OnBreak
                     MessageBox.Show("No se pudo agregar el Cliente", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
-            else
-            {
-                MessageBox.Show("Todos los datos son obligatorios");
-            }
-            
-            
+
 
         }
         private void DatosObligatorios()
@@ -143,15 +139,24 @@ namespace OnBreak
             {
                 contador++;
             }
-            if (txtTelefono.ToString()== String.Empty || int.Parse(txtTelefono.Text)<0)
+            try
+            {
+                if (txtTelefono.ToString() == String.Empty || int.Parse(txtTelefono.Text) < 0)
+                {
+                    contador++;
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("El telefono debe ser un valor numerico");
+            }
+            
+            if (cb_Actividad.SelectedIndex.ToString() == String.Empty)
             {
                 contador++;
             }
-            if (cb_Actividad.SelectedIndex == -1)
-            {
-                contador++;
-            }
-            if (cb_Actividad.SelectedIndex == -1)
+            if (cb_Actividad.SelectedIndex.ToString() == String.Empty)
             {
                 contador++;
             }

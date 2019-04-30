@@ -23,7 +23,7 @@ namespace OnBreak
     public partial class MainWindow : Window
     {
         
-        public List<Contrato> ListaContratos = new List<Contrato>();
+        
 
         public MainWindow()
         {
