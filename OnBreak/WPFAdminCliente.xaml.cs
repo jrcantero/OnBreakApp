@@ -22,6 +22,7 @@ namespace OnBreak
     public partial class WPFAdminCliente : Window
     {
         public List<Cliente> ListaClientes = new List<Cliente>();
+        int contador = 0;
         public WPFAdminCliente()
         {
             InitializeComponent();
@@ -88,6 +89,72 @@ namespace OnBreak
 
         private void Btn_agregar_Click(object sender, RoutedEventArgs e)
         {
+
+            DatosObligatorios();
+            if (contador==0)
+            {
+                try
+                {
+                    Cliente cli = new Cliente();
+
+                    cli.Rut = txtRut.Text;
+                    cli.Nombre = txtNombreContacto.Text;
+                    cli.Email = txtEmailContacto.Text;
+                    cli.Direccion = txtDireccion.Text;
+                    cli.Telefono = int.Parse(txtTelefono.Text);
+                    cli.TipoEmpresa = cb_TipoEmpresa.SelectedItem.ToString();
+                    cli.ActividadEmpresa = cb_Actividad.SelectedItem.ToString();
+
+                    ListaClientes.Add(cli);
+                    LimpiarForma();
+
+                }
+                catch (Exception)
+                {
+
+                    MessageBox.Show("No se pudo agregar el Cliente", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Todos los datos son obligatorios");
+            }
+            
+            
+
+        }
+        private void DatosObligatorios()
+        {
+            contador = 0;
+
+            if (txtRut.Text == String.Empty)
+            {
+                contador++;
+            }
+            if (txtNombreContacto.Text == String.Empty)
+            {
+                contador++;
+            }
+            if (txtRazonSocia.Text == String.Empty)
+            {
+                contador++;
+            }
+            if (txtDireccion.Text == String.Empty)
+            {
+                contador++;
+            }
+            if (txtTelefono.ToString()== String.Empty || int.Parse(txtTelefono.Text)<0)
+            {
+                contador++;
+            }
+            if (cb_Actividad.SelectedIndex == -1)
+            {
+                contador++;
+            }
+            if (cb_Actividad.SelectedIndex == -1)
+            {
+                contador++;
+            }
 
         }
     }
