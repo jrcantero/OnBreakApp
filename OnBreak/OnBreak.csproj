@@ -63,12 +63,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AdminContrato.xaml.cs">
+      <DependentUpon>AdminContrato.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ClienteListado.xaml.cs">
       <DependentUpon>ClienteListado.xaml</DependentUpon>
     </Compile>
     <Compile Include="WPFAdminCliente.xaml.cs">
       <DependentUpon>WPFAdminCliente.xaml</DependentUpon>
     </Compile>
+    <Page Include="AdminContrato.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ClienteListado.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
