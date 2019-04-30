@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ContratoCollection
 {
-    class TipoEvento
+    public class TipoEvento
     {
         public int IdTipo { get; set; }
         public string NombreEvento { get; set; }
