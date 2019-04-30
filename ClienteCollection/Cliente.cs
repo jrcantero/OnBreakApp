@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClienteCollection
 {
-    class Cliente
+    public partial class Cliente
     {
         public string Rut { get; set; }
         public string Razonsocial { get; set; }
@@ -37,4 +37,5 @@ namespace ClienteCollection
         Transporte,
         Servicios
     }
+
 }
