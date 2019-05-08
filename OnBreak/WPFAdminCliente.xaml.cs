@@ -184,5 +184,35 @@ namespace OnBreak
                 MessageBox.Show("Cliente no encontrado!");
             }
         }
+
+        private void Btn_modificar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Cliente lic = ListaClientes.First(l => l.Rut == txtRut.Text);
+                contador = 0;
+                
+                DatosObligatorios();
+
+                if (contador==0)
+                {
+                    lic.Nombre = txtNombreContacto.Text;
+                    lic.Email = txtEmailContacto.Text;
+                    lic.Direccion = txtDireccion.Text;
+                    lic.Telefono = int.Parse(txtTelefono.Text);
+                    lic.TipoEmpresa = cb_TipoEmpresa.SelectedItem.ToString();
+                    lic.ActividadEmpresa = cb_Actividad.SelectedItem.ToString();
+
+                    LimpiarForma();
+                }
+
+
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Cliente no encontrado!");
+            }
+        }
     }
 }

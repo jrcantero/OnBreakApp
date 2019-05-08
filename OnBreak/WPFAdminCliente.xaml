@@ -29,7 +29,7 @@
         <DataGrid x:Name="dg_clientes" HorizontalAlignment="Left" Height="262" Margin="450,37,0,0" VerticalAlignment="Top" Width="276"/>
         <Button x:Name="btn_ListarClientes" Content="Listar Clientes" HorizontalAlignment="Left" Margin="479,312,0,0" VerticalAlignment="Top" Width="233" Click="Btn_ListarClientes_Click"/>
         <Button x:Name="btn_agregar" Content="Agregar" HorizontalAlignment="Left" Margin="153,330,0,0" VerticalAlignment="Top" Width="95" FontSize="18" Click="Btn_agregar_Click"/>
-        <Button x:Name="btn_modificar" Content="Modificar" HorizontalAlignment="Left" Margin="254,330,0,0" VerticalAlignment="Top" Width="95" FontSize="18"/>
+        <Button x:Name="btn_modificar" Content="Modificar" HorizontalAlignment="Left" Margin="254,330,0,0" VerticalAlignment="Top" Width="95" FontSize="18" Click="Btn_modificar_Click"/>
         <Button x:Name="btnLimpiar" Content="Limpiar" HorizontalAlignment="Left" Margin="371,380,0,0" VerticalAlignment="Top" Width="75" Click="BtnLimpiar_Click"/>
         <Button x:Name="btn_borrar" Content="Borrar" HorizontalAlignment="Left" Margin="212,380,0,0" VerticalAlignment="Top" Width="75" Click="Btn_borrar_Click"/>
 
