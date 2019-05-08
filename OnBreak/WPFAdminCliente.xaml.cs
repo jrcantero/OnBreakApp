@@ -162,5 +162,27 @@ namespace OnBreak
             }
 
         }
+
+        private void Btn_borrar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Cliente lic = ListaClientes.First(l => l.Rut == txtRut.Text);
+                MessageBoxResult ConfirmoBorrar = MessageBox.Show("Esta seguro que desea eliminar este registro?", "Eliminar Libro", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                if (ConfirmoBorrar == MessageBoxResult.Yes)
+                {
+                    ListaClientes.Remove(lic);
+                    MessageBox.Show("Cliente eliminado", "Accion exitosa", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Cliente no encontrado!");
+            }
+        }
     }
 }

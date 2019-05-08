@@ -46,5 +46,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TipoEvento.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClienteCollection\ClienteCollection.csproj">
+      <Project>{667637a0-401d-4d41-b5f9-e5c65b5a3b61}</Project>
+      <Name>ClienteCollection</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
