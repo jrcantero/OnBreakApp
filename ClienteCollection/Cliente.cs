@@ -16,6 +16,23 @@ namespace ClienteCollection
         public int Telefono { get; set; }
         public string ActividadEmpresa { get; set; }
         public string TipoEmpresa { get; set; }
+
+        public Cliente()
+        {
+            this.Init();
+        }
+
+        private void Init()
+        {
+            Rut = string.Empty;
+            Razonsocial = string.Empty;
+            Nombre = string.Empty;
+            Email = string.Empty;
+            Direccion = string.Empty;
+            Telefono = 0;
+            ActividadEmpresa = string.Empty;
+            TipoEmpresa = string.Empty;
+        }
     }
 
     public enum _tipoEmpresa

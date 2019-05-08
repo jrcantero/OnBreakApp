@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ClienteCollection;
 
 namespace ContratoCollection
 {
-    public class Contrato
+    public partial class Contrato
     {
         public int IdContrato { get; set; }
         public string Creacion { get; set; }
@@ -17,6 +18,7 @@ namespace ContratoCollection
         public bool EstaVigente { get; set; }
         public TipoEvento Tipo { get; set; }
         public string Observaciones { get; set; }
+        public Cliente Cliente;
 
         public Contrato()
         {
